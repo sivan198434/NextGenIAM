@@ -1,0 +1,6 @@
+@IAM.LifecycleService_HostAddress = http://localhost:5101
+
+GET {{IAM.LifecycleService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

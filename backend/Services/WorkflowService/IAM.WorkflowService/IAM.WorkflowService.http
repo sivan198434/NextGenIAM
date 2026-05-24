@@ -1,0 +1,6 @@
+@IAM.WorkflowService_HostAddress = http://localhost:5143
+
+GET {{IAM.WorkflowService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@IAM.AuditService_HostAddress = http://localhost:5055
+
+GET {{IAM.AuditService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

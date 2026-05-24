@@ -1,0 +1,6 @@
+@IAM.ConnectorService_HostAddress = http://localhost:5024
+
+GET {{IAM.ConnectorService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

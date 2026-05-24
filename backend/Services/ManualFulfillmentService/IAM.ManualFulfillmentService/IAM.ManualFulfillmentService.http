@@ -1,0 +1,6 @@
+@IAM.ManualFulfillmentService_HostAddress = http://localhost:5039
+
+GET {{IAM.ManualFulfillmentService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

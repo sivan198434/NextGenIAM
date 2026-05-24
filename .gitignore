@@ -1,0 +1,20 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node
+node_modules/
+dist/
+.nx/
+.angular/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db

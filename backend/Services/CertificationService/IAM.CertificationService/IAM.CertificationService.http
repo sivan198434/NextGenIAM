@@ -1,0 +1,6 @@
+@IAM.CertificationService_HostAddress = http://localhost:5105
+
+GET {{IAM.CertificationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

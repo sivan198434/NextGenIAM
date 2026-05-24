@@ -1,0 +1,19 @@
+  Determining projects to restore...
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.AspNetCore.Http.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary. [/app/backend/Tests/IAM.Tests/IAM.Tests/IAM.Tests.csproj]
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Hosting.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary. [/app/backend/Tests/IAM.Tests/IAM.Tests/IAM.Tests.csproj]
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Http will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary. [/app/backend/Tests/IAM.Tests/IAM.Tests/IAM.Tests.csproj]
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Logging.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary. [/app/backend/Tests/IAM.Tests/IAM.Tests/IAM.Tests.csproj]
+  All projects are up-to-date for restore.
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.AspNetCore.Http.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Hosting.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Http will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.
+/app/backend/Shared/IAM.Shared/IAM.Shared.csproj : warning NU1510: PackageReference Microsoft.Extensions.Logging.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.
+  IAM.Shared -> /app/backend/Shared/IAM.Shared/bin/Debug/net10.0/IAM.Shared.dll
+  IAM.Tests -> /app/backend/Tests/IAM.Tests/IAM.Tests/bin/Debug/net10.0/IAM.Tests.dll
+Test run for /app/backend/Tests/IAM.Tests/IAM.Tests/bin/Debug/net10.0/IAM.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 66 ms - IAM.Tests.dll (net10.0)

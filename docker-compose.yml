@@ -1,0 +1,49 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    ports:
+      - "1433:1433"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  consul:
+    image: hashicorp/consul:latest
+    ports:
+      - "8500:8500"
+    command: "agent -dev -client=0.0.0.0"
+
+  gateway:
+    build:
+      context: ./backend
+      dockerfile: Gateway/IAM.Gateway/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - consul
+
+  identity-service:
+    build:
+      context: ./backend
+      dockerfile: Services/IdentityService/IAM.IdentityService/Dockerfile
+    depends_on:
+      - sqlserver
+      - rabbitmq
+      - consul
+
+  audit-service:
+    build:
+      context: ./backend
+      dockerfile: Services/AuditService/IAM.AuditService/Dockerfile
+    depends_on:
+      - sqlserver
+      - rabbitmq
+      - consul
+
+  # ... other services would follow similar pattern
